@@ -1,0 +1,74 @@
+html{
+  font-family: "Tahoma" , "Arial", sans-serif;
+}
+body{
+  background-image: url('http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_dark1400x900.jpg');
+}
+h1{
+font-style: bold;
+font-size: 150;
+}
+h1{
+  text-align: center;
+}
+h1,
+a{
+  color: purple;
+  font-size: 100;
+}
+p{
+  background: red;
+}
+p:hover{
+background: white;
+}
+#first{
+  text-decoration: bold;
+  text-decoration: inherit;
+}
+#user{
+  color: #FF3333;
+}
+.second{
+  font-style: italic;
+  background-color: yellow;
+}
+.background{
+  background: pink;
+}
+[href]{
+  font-size: 30;
+}
+[type = "password"]{
+
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+[type = "text"]{
+
+  box-shadow: : 0 0 5px rgba(0, 0, 0, 0.6);
+}
+[type ="submit"]{
+  color: red;
+}
+img:hover{
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+  max-width: 100%;
+  border-radius: 35px;
+}
+
+nav a{
+  text-decoration: line-through;
+}
+nav > a{
+font-weight: bold;
+
+}
+a:active {
+  color: #ff0000;
+}
+input:focus{
+  border: 1px dashed red;
+}
+.rect{
+  background: #f8f8ff;
+}
