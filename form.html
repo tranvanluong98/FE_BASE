@@ -1,0 +1,130 @@
+  <!doctype html>
+  <html lang="vi">
+  <head>
+  <meta charset = " utf-8 ">
+    <title> Form html </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1><strong>Đơn Xin Làm Thêm </strong></h1>
+    <!--
+    Khi click enter sẽ có require dạng get và nội dung nhập sẽ gắn vào sau message trên thanh địa chỉ
+        -->
+        <!-- Các method hay dùng
+        UPDATE - PUT
+        READ - GET
+        DELETE - DELETE
+        CREAT - POST
+      -->
+      <!-- Nên dùng lable  đi với thẻ input :
+        +) Nó sẽ giúp client lựa chọn đa điểm hơn
+        +) !Note : lable for="" phải giống với id=""
+        -->
+  <form action="http://www.example.com" method="get">
+    <label for="user"> User </lable>
+  <input type="text" name="user" id="user">
+
+  <input type="submit" value="Submit"> <br><br>
+
+  </form >
+  <!-- sẽ không hiện lên thanh địa chỉ mà chuyển thông tin đến 1 trang khác
+  +) cách xem: Vào CTRL +Shift +I  vào NetWork chọn all r ấn F5-->
+  <form action="http://www.example.com" method="post">
+    <label for="user" > Tên đăng nhập </lable>
+    <input type="text" name="username" id="user" required><br><br>
+
+    <label for="matkhau"> Password </lable>
+    <input type="password" name="matkhau" id="matkhau" required><br><br>
+
+
+  <p>- Giới Tính: </p>
+  <label for="sex_male" >
+  <input type="radio" name="sex" value="0" id="sex_male">
+Nam
+    <label for="sex_female" >
+    <input type="radio" name="sex" value="1" id="sex_female">
+Nữ
+      <label for="sex_nonemale" >
+      <input type="radio" name="sex" value="2" id="sex_nonemale">
+    Khác
+  </lable>
+  <br>  <br>
+
+  <!--Dùng checkbox sẽ đc multil choice ,  radio:  single choice -->
+<p><strong>- Các ngày trong tuần bạn có thể đi làm được:</strong></p>
+  <lable >
+    <input type="checkbox" name="days of weeks" value="0">
+    Thứ Hai
+  </lable>
+
+  <lable>
+    <input type="checkbox" name="days of weeks" value="1">
+Thứ ba
+  </lable>
+
+  <lable>
+    <input type="checkbox" name="days of weeks" value="2">
+  Wednesday
+  </lable>
+
+  <lable>
+    <input type="checkbox" name="days of weeks" value="3">
+  Thursday
+  </lable>
+
+  <lable>
+    <input type="checkbox" name="days of weeks" value="4">
+  Friday
+  </lable>
+
+  <lable>
+    <input type="checkbox" name="days of weeks" value="5">
+  Saturday
+  </lable>
+
+  <lable>
+    <input type="checkbox" name="days of weeks" value="6">
+  Sunday
+</lable><br>
+
+<strong>- Số điện thoại: </strong>
+<input type="tel" required maxlength="20"><br><br>
+<strong>- Email: </strong><br>
+<input type="email" required maxlength="50"><br><br>
+<strong>- Ngày Sinh:</strong>
+<input type="date" required><br><br>
+<strong>- Địa chỉ: </strong>
+<input type="text" name="diachi" id="diachi" required><br><br>
+<input type="submit" value="SUBMIT">
+
+  </form>
+
+  <img src="https://i.ytimg.com/vi/yaDGSPRekUE/maxresdefault.jpg" alt="Suyt" width="250" height="100" > <br>
+    <!--Thẻ liên kết web -->
+  <a href="https://www.facebook.com/luongbeat98" target="_blank" >My facebook: Click Here</a>
+
+
+  <!-- Thẻ div ~ thẻ p:  Còn gì thừ thì dùng thẻ div này -->
+  <div> HALO  </div>
+
+  <!-- Thẻ dùng List  sẽ có 2 loại : -->
+  <!--Thẻ ul: unorder list và ol : order list  -->
+  <!-- Thẻ ul : Khi nào không quan tâm vị trí(Có Chấm) -->
+
+  <ul>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+  </ul>
+
+  <!-- Thẻ ol :  Quan Tâm Vị trí (Có STT) -->
+  <ol>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+  </ol>
+    <strong>      Địa Chỉ: Đê La Thành - Hà Nội</strong> <br><br>
+
+  </body>
+
+  </html>
